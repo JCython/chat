@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LfPgM4kAAAAADdV1MAByKIW_rp5LmBzSp4AQHdQ'
+        });
+      };
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="https://pounce.lol/file/?f=warpr.ico">
+    <link rel="stylesheet" href="https://pounce.lol/file/?f=signup.css">
+    <link rel="stylesheet" href="http://localhost:7777/file/?f=signup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.75, minimum-scale=1.00">
+    <script src="https://kit.fontawesome.com/73dd9b876f.js" crossorigin="anonymous"></script>
+    <title>Sign Up</title>
+
+
+  </head>
+  <body>
+    <main>
+        <h1>Sign Up</h1>
+        <!-- <h2>Email</h2>
+        <input class="text" type="email" name="email" id="email">
+        <br> -->
+        <h2>Username</h2>
+        <input class="text" name="username" id="username">
+        <br>
+        <h2>Password</h2>
+        <input class="text" type="password" name="password" id="password">
+        <br>
+        <h2>Confirm Password</h2>
+        <input class="text" type="password" name="confirmPassword" id="confirmPassword">
+        <br>
+        <br>
+        <div id="html_element"></div>
+        <br>
+        <button style="margin-bottom:175px;" onclick="signup()" value="Sign Up" id="submit">Sign Up</button>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer>
+        </script>
+        <script src="https://pounce.lol/file/?f=signup.js"></script>
+        <script src="http://localhost:7777/file/?f=signup.js"></script>
+    </main>
+  </body>
+</html>

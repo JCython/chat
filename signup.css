@@ -1,0 +1,89 @@
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(45, 229, 253, 0.123) 100%);
+    overflow-y: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    background-color: rgba(255, 255, 255, 0.26);
+    margin-top: 8px;
+    margin-bottom: calc(8px);
+    height: calc(100% - 16px);
+    border-radius: 7px;
+    /* height: calc(100% + 16px); */
+    padding-left: 75px;
+    overflow-y: scroll;
+    border: 1px black solid;
+    padding-bottom: 0px;
+}
+
+.text {
+    border: 2px black solid;
+    min-height: 40px;
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 3px;
+    width: 45%;
+}
+
+#submit {
+    height: 50px;
+    width: 200px;
+    border: 2px black solid;
+    background-color: white;
+    font-family: "Mulish", sans-serif;
+    font-size: 23px;
+}
+
+#submit:hover {
+    background-color: #b1b1b1;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Mulish", sans-serif;
+}
+
+h2 {
+    font-family: "Mulish", sans-serif;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    width: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(206, 205, 205);
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 163, 163);
+    border-radius: 4px;
+  }
+  

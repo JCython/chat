@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Auth</h1>
+    <input type="password" id="mod">
+    <h1>Action</h1>
+    <input type="text" id="action">
+    <h1>User</h1>
+    <input type="text" id="user">
+    <h1>Message</h1>
+    <input type="text" id="message">
+    <h1>Channel</h1>
+    <input type="text" id="channel">
+    <button onclick="action()">Submit</button>
+    <script>
+        let url = 'http://localhost:7777/mod/'
+        //let url = 'https://pounce.lol/mod/'
+        function action() {
+                if (document.getElementById('action') == 'deleteUser') {
+                fetch(`${url}delete/user/`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'auth': document.getElementById('mod').value,
+                        'user': document.getElementById('user').value,
+                        'channel': document.getElementById('channel').value,
+                        'message': document.getElementById('message').value,
+                    },
+                })
+                // response is not json
+                .then(response => response.text())
+                .then(data => {
+                    alert(data)
+                })
+                }
+
+                if (document.getElementById('action') == 'deleteMessage') {
+                fetch(`${url}delete/message/`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'auth': document.getElementById('mod').value,
+                        'message': document.getElementById('message').value,
+                        'channel': document.getElementById('channel').value,
+                    },
+                })
+                }
+        }     
+    </script>
+</body>
+</html>
